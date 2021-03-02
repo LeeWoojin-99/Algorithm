@@ -1,0 +1,2 @@
+
+print("auto test")
