@@ -1,9 +1,9 @@
 import collections
 
 queue = collections.deque([1,2,3])
-#oduble-ended queue
+#double-ended queue
 #양방향에서 데이터를 처리할 수 있다.
-#python에서 cllections.deque는 list와 비슷하다.
+#python에서 collections.deque는 list와 비슷하다.
 
 queue.appendleft(4)
 #appendleft처럼 append, pop, extend를
