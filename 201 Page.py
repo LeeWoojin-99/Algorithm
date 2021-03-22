@@ -20,21 +20,15 @@ Binary Search Algorithm Problem
 
 n, m = list(map(int, input().split()))
 arr = list(map(int, input().split()))
-h = 1
 
-def BS(BSarr, target):
-    sum = 0
-    for i in range(len(BSarr)):
-        BSarr[i] -= target
-    for i in range(len(BSarr)):
-        if BSarr[i] > 0:
-            sum += BSarr[i]
-    return sum
-
-total = BS(arr[:], h)
-
-while total >= m:
+h, total, sum = [0 for i in range(3)]
+while h == 0 or total >= m:
     h += 1
-    total = BS(arr[:], h)
-
+    total = 0
+    for i in range(len(arr)):
+        sum = arr[i] - h
+        if sum > 0:
+            total += sum
+    print(h, total)
+    
 print(h-1)
