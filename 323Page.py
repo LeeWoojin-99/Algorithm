@@ -54,7 +54,7 @@ def solution(s):
 		#print() #test
 
 	#print(result)
-
+	if len(s) == 1: result.append((1,1))
 	return min(result, key = lambda x: x[0])[0]
 
 print(solution('aabbaccc'))
