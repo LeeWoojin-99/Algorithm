@@ -1,4 +1,6 @@
-# 파이썬
+'''
+355 Page
+'''
 from collections import deque
 
 def check_map(map_data):
